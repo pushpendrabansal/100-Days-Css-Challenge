@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.main {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #fff;
+  background: linear-gradient(to top right, #285161, #49cf88);
+  height: 400px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif; }
+  .main .center {
+    position: absolute;
+    top: 20%;
+    left: 28%; }
+    .main .center .number {
+      position: relative;
+      height: 100px;
+      width: 200px; }
+      .main .center .number .one-one {
+        position: absolute;
+        z-index: 1;
+        left: -16px;
+        height: 40px;
+        width: 20px;
+        background: #fff;
+        transform: rotate(50deg);
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2); }
+      .main .center .number .one-two {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0px;
+        height: 100px;
+        width: 24px;
+        background: #fff;
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2); }
+      .main .center .number .zero-one, .main .center .number .zero-two {
+        position: absolute;
+        z-index: 8;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: solid 20px #fff;
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+        left: 10%; }
+      .main .center .number .zero-two {
+        z-index: 6;
+        left: 105px; }
+    .main .center .big {
+      position: relative;
+      z-index: 20;
+      text-transform: uppercase;
+      font-size: 5.6em;
+      font-weight: bolder;
+      display: block;
+      margin-left: -16px;
+      line-height: 80px; }
+    .main .center .small {
+      position: relative;
+      z-index: 15;
+      text-transform: uppercase;
+      font-size: 1.6em;
+      display: block; }
+
+/*# sourceMappingURL=style.css.map */
