@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.line, .main .center .menu .line1, .main .center .menu .line2, .main .center .menu .line3 {
+  height: 8px;
+  background: #fff;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2); }
+
+.main {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #fff;
+  background: linear-gradient(to top right, #285161, #49cf88);
+  height: 400px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif; }
+  .main .center {
+    position: absolute;
+    top: 40%;
+    left: 38%; }
+    .main .center .menu {
+      cursor: pointer;
+      height: 100px;
+      width: 80px; }
+      .main .center .menu .line1 {
+        animation: rev-animation-line-1 0.7s ease-in-out; }
+      .main .center .menu .line2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        animation: rev-animation-line-2 0.7s ease-in-out; }
+      .main .center .menu .line3 {
+        animation: rev-animation-line-3 0.7s ease-in-out; }
+      .main .center .menu.active .line1 {
+        animation: animation-line-1 0.7s ease-in-out forwards; }
+      .main .center .menu.active .line2 {
+        animation: animation-line-2 0.7s ease-in-out forwards; }
+      .main .center .menu.active .line3 {
+        animation: animation-line-3 0.7s ease-in-out forwards; }
+
+.no-animation {
+  animation: none !important; }
+
+@keyframes animation-line-1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% {
+    transform: translate3d(0, 18px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, 18px, 0) rotate(45deg); } }
+@keyframes animation-line-2 {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+@keyframes animation-line-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% {
+    transform: translate3d(0, -18px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, -18px, 0) rotate(135deg); } }
+@keyframes rev-animation-line-1 {
+  0% {
+    transform: translate3d(0, 18px, 0) rotate(45deg); }
+  50% {
+    transform: translate3d(0, 18px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg); } }
+@keyframes rev-animation-line-2 {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+@keyframes rev-animation-line-3 {
+  0% {
+    transform: translate3d(0, -18px, 0) rotate(135deg); }
+  50% {
+    transform: translate3d(0, -18px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg); } }
+
+/*# sourceMappingURL=style.css.map */
