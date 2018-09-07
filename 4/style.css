@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.main {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #fff;
+  background: #E74B4B;
+  height: 400px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif; }
+  .main .center {
+    position: absolute;
+    top: 34%;
+    left: 38%; }
+    .main .center .circle1 {
+      background: #fff;
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      animation: circle1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+      position: absolute;
+      z-index: 1; }
+    .main .center .circle2 {
+      background: #fff;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      animation: circle2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2; }
+    .main .center .circle3 {
+      background: #fff;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      animation: circle3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      z-index: 3; }
+
+@keyframes circle1 {
+  0%,10% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0); }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1); } }
+@keyframes circle2 {
+  0%,50% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0); }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1); } }
+@keyframes circle3 {
+  0%,79% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0); }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
