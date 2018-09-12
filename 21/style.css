@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.main {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #fff;
+  background: #373231;
+  height: 400px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden; }
+  .main .pacman {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 25%;
+    z-index: 1;
+    fill: none;
+    stroke: yellow;
+    stroke-width: 50px;
+    stroke-linecap: butt;
+    stroke-dasharray: 157;
+    animation: mouth 1s ease-in-out infinite; }
+  .main .eye {
+    position: absolute;
+    top: 33%;
+    left: 37%;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    fill: #373231;
+    animation: eye 1s ease-in-out infinite; }
+  .main .balls {
+    position: absolute;
+    height: 14px;
+    width: 240px;
+    top: 40%;
+    left: 180px;
+    stroke: #F4D146;
+    stroke-width: 14px;
+    stroke-dasharray: 0px 50px;
+    stroke-linecap: round;
+    animation: points 1s linear infinite;
+    stroke-dashoffset: 14; }
+
+@keyframes mouth {
+  0%, 100% {
+    stroke-dashoffset: 0;
+    transform: rotate(0deg) translate3d(0, 0, 0); }
+  50% {
+    stroke-dashoffset: 39.25;
+    transform: rotate(45deg); } }
+@keyframes eye {
+  0%, 100% {
+    transform: translate3d(0, 0, 0); }
+  50% {
+    transform: translate3d(-4px, 2px, 0); } }
+@keyframes points {
+  0% {
+    stroke-dashoffset: 14;
+    transform: translate3d(0, 0, 0); }
+  100% {
+    stroke-dashoffset: 64; } }
+
+/*# sourceMappingURL=style.css.map */
