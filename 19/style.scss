@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.main{
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	color:#fff;
+	background: #409CCD;
+	height: 400px;
+	width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	.center{
+		position: absolute;
+		width: 400px;
+	    height: 400px;
+	    top: 0;
+	    left: 0;
+	    overflow: hidden;
+		.circle{
+			width: 34px;
+		    height: 34px;
+		    top: 175px;
+		    left: 130px;
+		    position: absolute;
+		    border-radius: 50%;
+		    cursor: pointer;
+		    border: 2px solid #fff;
+		    box-sizing: border-box;    
+		    z-index: 5;
+		}
+		#c2{
+			left: 170px;
+		}
+		#c3{
+			left: 210px;
+		}
+		.active{			
+			position: absolute;
+			background: #fff;
+			width: 25px;
+		    height: 25px;
+		    top: 179px;
+		    left:134px;
+		    box-sizing: border-box;
+		    border-radius:50%; 
+		    z-index: 10;
+		    transition: all 1s ease;
+		}	
+		#circle1:checked ~ .active{
+			transform: translateX(0px);
+		}
+		#circle2:checked ~ .active{
+			transform: translateX(40px);
+		}
+		#circle3:checked ~ .active{
+			transform: translateX(80px);
+		}
+
+
+	}
+
+	.bg{
+			position: absolute;
+			width: 400px;
+			height: 400px;
+			top: 0;	
+			left: 0;
+			transition: all 1s ease;
+			background: #3498db;
+    		border-left: 400px solid #9b59b6;
+    		border-right: 400px solid #1abc9c;
+    		transform: translateX(0px);
+		}
+		#circle1:checked ~ .bg{
+			transform: translateX(0px);
+		}
+		#circle2:checked ~ .bg{
+			transform: translateX(-400px);
+		}
+		#circle3:checked ~ .bg{
+			transform: translateX(-800px);
+		}
+
+}		
+
+input[type="radio"] {
+    display:none;
+}
