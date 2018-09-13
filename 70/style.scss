@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+p,h5{
+	margin: 0;
+	padding: 0
+}
+
+.main{
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	color:#fff;
+	background: #512626;
+	height: 400px;
+	width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	.card{
+		width: 200px;
+		height: 200px;
+		float: left;
+		text-align: center;
+		padding-top: 40px;
+		transition: all .3s ease-in-out;
+		box-sizing:border-box;	
+		cursor: pointer;
+		background: #E27474;
+		&:hover{
+			box-shadow: inset 2px 2px 4px 1px rgba(0,0,0,0.25);
+		//	box-shadow: inset 4px 2px 46px 4px rgba(0,0,0,0.75);
+			transform:scale(0.95);
+		}
+	}
+	.card p{
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	.card h5{
+		font-size: 3.4em
+	}
+}
