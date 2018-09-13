@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+p{
+	margin: 0;
+	padding: 0
+}
+
+.main{
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	color:#fff;
+	background: #FF914F;
+	height: 400px;
+	width: 400px;
+	font-family: 'Open Sans', sans-serif;
+	.center{
+		position: absolute;
+		width: 400px;
+	    height: 400px;
+	    top: 35%;
+	    left: 24%;
+		.fixed{
+			position: absolute;
+			color: #fff;
+			font-size: 1.8em;
+			font-weight: bold;
+			float: left;
+		}
+		.change{
+			@extend .fixed;
+			position: relative;
+			right: 204px;
+			float: right;
+			height: 1.5em;
+			overflow: hidden;
+		}
+		.animbox{
+			position: relative;
+			animation: anim 8s ease-in-out infinite;
+		}
+	}
+}
+
+@keyframes anim{
+	0%,15%{
+		transform: translateY(0px);
+	}
+	25%,40%{
+		transform: translateY(-39px);
+	}
+	50%,65%{
+		transform: translateY(-77px);
+	}
+	75%,90%{
+		transform: translateY(-115px);	
+	}
+	100%{
+		transform:translateY(-153px)
+	}
+}
