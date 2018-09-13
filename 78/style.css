@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.main {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #fff;
+  background: #46A6DA;
+  height: 400px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif; }
+  .main .button {
+    position: absolute;
+    left: 30%;
+    width: 170px;
+    height: 46px;
+    background: #fff;
+    border: none;
+    padding: 4px;
+    font-size: 1em;
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+    transition: all .3s ease-in-out; }
+  .main .first {
+    top: 31%; }
+    .main .first:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75); }
+  .main .second {
+    top: 48%; }
+    .main .second:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75); }
+  .main .third {
+    top: 65%; }
+    .main .third:hover {
+      transform: scale(1.09);
+      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75); }
+
+/*# sourceMappingURL=style.css.map */
