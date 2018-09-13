@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.main {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: #fff;
+  background: #409CCD;
+  height: 400px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif; }
+  .main .center {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 4%;
+    overflow: hidden; }
+    .main .center .circle {
+      width: 30px;
+      height: 30px;
+      top: 175px;
+      left: 100px;
+      position: absolute;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-sizing: border-box;
+      z-index: 5;
+      text-align: center; }
+      .main .center .circle:hover {
+        background: #409CCD; }
+      .main .center .circle:before {
+        display: block;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        border-radius: 50%;
+        background: #fff;
+        transform: scale(0);
+        transition: all .5s ease-in-out; }
+    .main .center #c2 {
+      left: 140px; }
+    .main .center #c3 {
+      left: 180px; }
+    .main .center #c4 {
+      left: 220px; }
+    .main .center #circle1:checked ~ #c1 {
+      color: #409CCD; }
+      .main .center #circle1:checked ~ #c1:before {
+        transform: scale(1); }
+    .main .center #circle2:checked ~ #c2 {
+      color: #409CCD; }
+      .main .center #circle2:checked ~ #c2:before {
+        transform: scale(1); }
+    .main .center #circle3:checked ~ #c3 {
+      color: #409CCD; }
+      .main .center #circle3:checked ~ #c3:before {
+        transform: scale(1); }
+    .main .center #circle4:checked ~ #c4 {
+      color: #409CCD; }
+      .main .center #circle4:checked ~ #c4:before {
+        transform: scale(1); }
+
+input[type="radio"] {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
